@@ -1,6 +1,6 @@
 #!/compat/ubuntu/bin/bash
 #
-# Copyright (c) 2011 The Chromium Authors. All rights reserved.
+# Copyright (c) 2015 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
@@ -32,9 +32,6 @@ fi
 export LD_LIBRARY_PATH
 
 export CHROME_VERSION_EXTRA="stable"
-
-# We don't want bug-buddy intercepting our crashes. http://crbug.com/24120
-export GNOME_DISABLE_CRASH_DIALOG=SET_BY_GOOGLE_CHROME
 
 # Sanitize std{in,out,err} because they'll be shared with untrusted child
 # processes (http://crbug.com/376567).
